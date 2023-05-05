@@ -10,7 +10,7 @@ import math
 import numpy as np
 
 def readCsvFile(season: str, team_abbreviation: str): # Read csv file, find target seaon and team
-    df = pd.read_csv('Pass_data/Pass_Data_14_22.csv')
+    df = pd.read_csv('Pass_data/Pass_Data_21_22.csv')
     while True:
         if season not in df['SEASON'].values and team_abbreviation not in df['TEAM_ABBREVIATION'].values:
             season = input("Season and team input not found!\nEnter season:") or '2021-22'
